@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boba", "Boba\Boba.csproj", "{A6345330-BFDE-4994-851D-E53697D6159F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boba.Tests", "Boba.Tests\Boba.Tests.csproj", "{D21A71A1-6BEF-4AEE-978D-819438405D79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A6345330-BFDE-4994-851D-E53697D6159F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6345330-BFDE-4994-851D-E53697D6159F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6345330-BFDE-4994-851D-E53697D6159F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6345330-BFDE-4994-851D-E53697D6159F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
