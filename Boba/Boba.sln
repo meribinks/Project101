@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boba", "Boba\Boba.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Boba.Tests", "Boba.Tests\Boba.Tests.csproj", "{D21A71A1-6BEF-4AEE-978D-819438405D79}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BobaBusinessLayer", "BobaBusinessLayer\BobaBusinessLayer.csproj", "{98846435-505A-4A2A-BA14-99A22B9C7224}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D21A71A1-6BEF-4AEE-978D-819438405D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98846435-505A-4A2A-BA14-99A22B9C7224}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98846435-505A-4A2A-BA14-99A22B9C7224}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98846435-505A-4A2A-BA14-99A22B9C7224}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98846435-505A-4A2A-BA14-99A22B9C7224}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

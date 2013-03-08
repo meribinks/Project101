@@ -1,0 +1,14 @@
+﻿@model Boba.Models.MainCategoryModel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+<ul data-role="listview" data-inset="true">
+    @foreach (var item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "DrinkSelection", new { id = item.ID })</li>
+    }
+</ul>

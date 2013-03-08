@@ -4,13 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
+using BobaBusinessLayer;
+
 namespace Boba.Controllers
 {
     public class FoodMenuController : Controller
     {
-        //
-        // GET: /FoodMenu/
-
+  
         public ActionResult Index()
         {
             return View();

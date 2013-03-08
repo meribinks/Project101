@@ -40,6 +40,11 @@ namespace Boba
                         "~/Content/themes/base/jquery.ui.datepicker.css",
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
+
+
+            bundles.Add(new StyleBundle("~/bundles/carouselcss").Include("~/Content/carousel.css"));
+            bundles.Add(new ScriptBundle("~/bundles/carouseljs").Include("~/Scripts/carousel.*"));
+
         }
     }
 }
