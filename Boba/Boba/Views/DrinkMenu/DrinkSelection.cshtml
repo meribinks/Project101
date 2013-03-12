@@ -1,18 +1,21 @@
 ﻿@model Boba.Models.DrinksModel
 
 @{
-    ViewBag.Title = "Drink Selection";
+    ViewBag.Title = "Drink Selection1";
     Layout = "~/Views/Shared/_LayoutCarousel.cshtml";
 }
 
-<h2>Drink Selection</h2>
-<div data-role="content" >
+<h2>Title</h2>
+
+<div data-role="page" data-theme="c" id="drinkSelection">
+    <div data-role="header"><h1>blah blah@ViewBag.Title</h1></div>        
+    <div data-role="content" >
     <div id="content" style="height:100%;width:300px;"> 
 	    <div style="height:100%;width:300px;">		
 		    <div style="height:460px;width:300px;">
 			    <div  id="carousel" class="carousel">							
 				    <div id="carousel_scrollpane" class="carousel-content">
-					    <div id="carousel_content" class="carousel-content-scroller">blah</div>
+					    <div id="carousel_content" class="carousel-content-scroller"></div>
 				    </div>
 				    <div id="carousel_nav" class="carousel-nav">
 					    <div id="carousel_mid" class="carousel-mid"></div>
@@ -20,42 +23,36 @@
 			    </div>
             </div>
             <div id="carousel_template" style="display:none">
-                @foreach (var item in Model)
-	            {
-                    <div class="carousel-item">
-		                <div style="height:2em;font-size:1.5em;padding-bottom:15px;">@item.Name</div>
-		                <div id="carousel_item_@(item.ID)" >
-			                <div style="float:left;width:100%"><img src="@item.ImageURL" /></div>				      								
-		                </div>
-	                </div>
-	            }
-            </div>     
+               <div class="carousel-item">
+		            <div style="height:2em;font-size:1.5em;padding-bottom:15px;">*{title}</div>
+                    <div id="carousel_item_*{id}" >
+			            <div style="float:left;width:100%"><img src="*{image}" /></div>				      								
+		            </div>
+                </div>
+            </div>    
             <script type="text/javascript">
+                var arr = new Array();
+                @foreach (var item in Model)
+                {
+                    <text>var value1 = '@item.Name';
+                    var value2 = '@item.ID';
+                    var value3 = '@item.ImageURL';
+                    var obj = {
+                        title: value1,
+                        id: value2,
+                        image: value3
+                    };
+                    arr.push(obj);</text>
+                }
                 var carousel = new $.widgets.Carousel({
                     uuid: "carousel",
-                    args: { "scrollInterval": 600, "itemWidth": 290
-                    },
-                    value: [
-							{ "title": "Tron.Legacy",
-							    "image": "images/1.jpg"
-							},
-					  	    { "title": "Yogi Bear",
-					  	        "image": "images/2.jpg"
-					  	    },
-					  	    { "title": "The Chronicles of Narnia: The Voyage of the Dawn Treader",
-					  	        "image": "images/3.jpg"
-					  	    },
-					  	    { "title": "The Fighter",
-					  	        "image": "images/4.jpg"
-					  	    },
-					  	    { "title": "Tangled",
-					  	        "image": "images/5.jpg"
-					  	    }
-					]
-                });					  
-		</script>	   
+                    args: { "scrollInterval": 600, "itemWidth": 290},
+                    value: arr
+			            });
+            </script>
         </div>
     </div>
+</div>
 </div>
 
 

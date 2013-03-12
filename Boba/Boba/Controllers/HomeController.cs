@@ -10,7 +10,7 @@ namespace Boba.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Boba Train.";
+            //ViewBag.Message = "Boba Train.";
 
             return View();
         }

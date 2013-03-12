@@ -98,7 +98,7 @@ $.widgets.Carousel = function (wargs) {
     };
     this.applyTemplate = function (obj, _t) {
         for (var i in obj) {
-            var token = "@{" + i + "}";
+            var token = "*{" + i + "}";
             while (_t.indexOf(token) != -1) {
                 _t = _t.replace(token, obj[i]);
             }
@@ -214,3 +214,4 @@ $.widgets.Carousel = function (wargs) {
     };
     _widget.load();
 };
+

@@ -18,9 +18,10 @@ namespace BobaBusinessLayer
 
             //TODO: Access from database
 
-            result.Add(new Drink { ID = 1, 
+            result.Add(new Drink { ID = 0, 
                 Name = "blueberry", 
                 Flavor = f.FlavorLookup.Where(fl => fl.Name.Equals("blueberry")).First(),
+                ImageURL = "http://dummyimage.com/200x200/001eff/fff.jpg&text=" + "blueberry", 
                 DrinkCategories = new List<DrinkCategory>()
                     {DrinkCategory.FruitTea, 
                     DrinkCategory.Slush, 
@@ -30,9 +31,10 @@ namespace BobaBusinessLayer
 
             result.Add(new Drink
             {
-                ID = 2,
+                ID = 1,
                 Name = "mango",
                 Flavor = f.FlavorLookup.Where(fl => fl.Name.Equals("mango")).First(),
+                ImageURL = "http://dummyimage.com/200x200/ffff0/fff.jpg&text=" + "mango",                
                 DrinkCategories = new List<DrinkCategory>()
                     {DrinkCategory.FruitTea, 
                     DrinkCategory.BlendedMilkTea,
@@ -41,12 +43,24 @@ namespace BobaBusinessLayer
                     DrinkCategory.Snow, 
                     DrinkCategory.Yogurt}
             });
-      
+
+            result.Add(new Drink
+            {
+                ID = 2,
+                Name = "grape",
+                Flavor = f.FlavorLookup.Where(fl => fl.Name.Equals("grape")).First(),
+                ImageURL = "http://dummyimage.com/200x200/6e3c99/fff.jpg&text=" + "grape",
+                DrinkCategories = new List<DrinkCategory>()
+                    {DrinkCategory.FruitTea, 
+                    DrinkCategory.BlendedMilkTea,
+                    DrinkCategory.IcedMilkTea,
+                    DrinkCategory.Slush, 
+                    DrinkCategory.Snow}
+            });
 
             //Populate Temporary Image
             foreach (var item in result)
             {
-                item.ImageURL = "http://dummyimage.com/200x200/215/fff.jpg&text=" + item.Name;
                 item.Description = string.Format("Fresh {0} blended with lemon vodka, lime juice, and Cointreau makes a refreshing drink.", item.Name);
             }
 

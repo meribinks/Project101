@@ -140,7 +140,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\carousel.css" />
-    <Content Include="Content\DrinkSelection.css" />
     <Content Include="Content\images\ajax-loader.gif" />
     <Content Include="Content\images\ajax-loader.png" />
     <Content Include="Content\images\icons-18-black.png" />
@@ -210,7 +209,6 @@
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\carousel.js" />
-    <Content Include="Scripts\DrinkSelection.js" />
     <Content Include="Scripts\jquery-1.7.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -227,6 +225,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\knockout-2.1.0.debug.js" />
     <Content Include="Scripts\knockout-2.1.0.js" />
+    <Content Include="Scripts\Main.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">

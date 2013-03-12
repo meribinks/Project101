@@ -4,9 +4,12 @@
 
 <h2>@ViewBag.Message</h2>
 
-<ul data-role="listview" data-inset="true">
-    <li>@Html.ActionLink("Drinks", "Index", "DrinkMenu")</li>
-    <li>@Html.ActionLink("Food", "Index", "FoodMenu")</li>
-    <li>@Html.ActionLink("About", "About", "Home")</li>
-    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-</ul>
+<div data-role="page" data-theme="c" id="homePage">
+    <div data-role="header"><h1>blah blah@ViewBag.Title</h1></div>     
+    <ul data-role="listview" data-inset="true">
+        <li>@Html.ActionLink("Drinks", "Index", "DrinkMenu")</li>
+        <li>@Html.ActionLink("Food", "Index", "FoodMenu")</li>
+        <li>@Html.ActionLink("About", "About", "Home")</li>
+        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+    </ul>
+</div>

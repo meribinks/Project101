@@ -42,8 +42,9 @@ namespace Boba
                         "~/Content/themes/base/jquery.ui.theme.css"));
 
 
-            bundles.Add(new StyleBundle("~/bundles/carouselcss").Include("~/Content/carousel.css"));
-            bundles.Add(new ScriptBundle("~/bundles/carouseljs").Include("~/Scripts/carousel.*"));
+            bundles.Add(new StyleBundle("~/Content/carouselcss").Include("~/Content/carousel.css"));
+            bundles.Add(new ScriptBundle("~/bundles/carouseljs").Include("~/Scripts/carousel.js"));
+            bundles.Add(new ScriptBundle("~/bundles/mainjs").Include("~/Scripts/Main.js"));
 
         }
     }
